@@ -158,9 +158,13 @@
 
                   <script>
                     function ml_webform_success_1059320() {
-                      var $ = ml_jQuery || jQuery;
-                      $(".ml-subscribe-form-1059320 .row-success").show();
-                      $(".ml-subscribe-form-1059320 .row-form").hide();
+                      try {
+                        window.top.location.href =
+                          "http://dailyentrepeneurtool.website/success.html";
+                      } catch (e) {
+                        window.location.href =
+                          "http://dailyentrepeneurtool.website/success.html";
+                      }
                     }
                   </script>
 
@@ -168,8 +172,6 @@
                     src="https://groot.mailerlite.com/js/w/webforms.min.js?vaa2c3c2aced59c19bcfc4be08835b7b3"
                     type="text/javascript"
                   ></script>
-
-          
                 </div>
                 <div style="font-size: 10px; line-height: 18px">
                   We are currently curating - leave your email here to be
